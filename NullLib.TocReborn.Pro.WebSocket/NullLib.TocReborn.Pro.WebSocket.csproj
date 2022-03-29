@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.1;net47</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<AssemblyName>NullLib.TocReborn.Pro</AssemblyName>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net47'">
+		
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\NullLib.TocReborn.Pro\NullLib.TocReborn.Pro.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.1;net47</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="TocProMessage.cs~RF95e77a1.TMP" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\NullLib.TocReborn\NullLib.TocReborn.csproj" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+		<PackageReference Include="System.Runtime.Caching" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net47'">
+		<Reference Include="System.Runtime.Caching" />
+	</ItemGroup>
+
+</Project>
